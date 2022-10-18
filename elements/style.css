@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #C3FF99;
+}
+
+.titulo {
+color: white;
+font-size: 43px;
+font-size: 21px;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo {
+color: red;
+font-family: 'Fredoka One', cursive;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 5px;
+}
+
+.tarjeta-de-elements {
+    width: 135px;
+    height: 105px;
+    background: #F7A76C;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid aquamarine;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;   
+}
+
+.kisame {
+    width: 45px;
+}
+
+.gaara {
+    width: 60px; ;
+}
+ 
+.itachi {
+    width: 100px;
+}
+
+#boton-seleccionar {
+    width: 136px;
+    height: 34px;
+    border-radius: 20px;
+    border-color: #E0D98C;
+    background: transparent;
+    border: 3px solid black;
+    font-family: 'Comfortaa', cursive;
+    margin: 25px;
+}
+
+input {
+   display: none;
+}
+
+input:checked+label {
+    background-color: lightblue;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #F7A76C;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid aquamarine;
+    border-radius: 20px;
+    width: 105px;
+    font-family: 'Comfortaa', cursive;
+}
+
+#mensajes {
+    width: 185px;
+    background: #EC7272;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Comfortaa', cursive;
+}
+
+#boton-reiniciar {
+    border: transparent;
+    color: crimson;
+
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
+    }
+}

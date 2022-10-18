@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta chraset="utf-8" />
+         <title>ELEMENTS</title>
+         <link rel="stylesheet" href="./style.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+        <body>
+            <section id="seleccionar-mascota">
+                <h1 class="titulo">ELEMENTS 🔥💧🌱</h1>
+
+                <h2 class="subtitulo">Elige tu mascota:</h2>
+
+                <div class="tarjetas">
+                <input type="radio" name="mascota" id="kisame" />
+                <label class="tarjeta-de-elements" for="kisame">
+                    <p>Kisame</p>
+                    <img class="kisame" src="./imagenes/kisame-removebg-preview.png" alt+="Kisame">
+                </label>
+                
+                <input type="radio" name="mascota" id="gaara" />
+                <label class="tarjeta-de-elements" for="gaara">
+                    <p>Gaara</p>
+                    <img class="gaara" src="./imagenes/gaara-removebg-preview.png" alt+="Gaara">
+                </label>
+                
+                <input type="radio" name="mascota" id="itachi" />
+                <label class="tarjeta-de-elements" for="itachi">
+                    <p>Itachi</p>
+                    <img class="itachi" src="./imagenes/itachi-removebg-preview.png" alt+="Kisame">
+                    </label>
+                </div>
+               
+                <button id="boton-seleccionar">Seleccionar</button>
+            </section>
+
+            <section id="seleccionar-ataque">
+                <h1 class="titulo">ELEMENTS 🔥💧🌱</h1>
+
+                <h2 class="subtitulo">Elige tu ataque:</h2>
+
+                <div class="tarjetas-ataques">
+                    <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+                    <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
+                    <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button>
+                </div>
+
+                <div id="mensajes">
+                    <p id="resultado">Resultado del juego</p>
+
+                     <section id="reiniciar">
+                        <button id="boton-reiniciar">Reiniciar</button>
+                    </section>
+                </div>
+
+            <div class="ataques">
+
+                <div class="ataques-jugador">
+                    <p id="vida-jugador">3 </p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>  
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="vida-enemigo">3 </p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+
+            </div>           
+            </section>
+            <script src="./js/elements.js"></script>
+        </body>
+    </html>
